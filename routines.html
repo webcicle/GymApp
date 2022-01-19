@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./styles.css" />
+		<link rel="stylesheet" href="../fontawesome-free-5.9.0-web/css/all.css" />
+		<script src="./routines.js" type="module"></script>
+		<title>Gym Crabs</title>
+	</head>
+	<body>
+		<div class="alert" data-alertOpen="false">
+			<i class="fas fa-exclamation-triangle"></i>
+			<p class="alert-message" data-alertMsg>
+				This feature will be available in the future (or not)
+			</p>
+		</div>
+
+		<header class="header" data-header>
+			<!-- <div class="blur"></div> -->
+			<p class="header-fixed-title" data-headerTitle>routines</p>
+			<div class="center flex">
+				<div class="header-button-container">
+					<button class="header-btn sort-btn" data-headerBtn="sortRoutines">
+						<i class="fas fa-sort-amount-down-alt"></i>
+					</button>
+					<button class="header-btn add-btn" data-headerBtn="addRoutine">
+						<i class="fas fa-plus"></i>
+					</button>
+				</div>
+			</div>
+		</header>
+
+		<main class="main-window">
+			<div class="center">
+				<h1 class="section-title" data-sectionTitle>routines</h1>
+				<div class="module quote-of-the-day">
+					<h2>Quote of the Day</h2>
+					<p data-quote>
+						"There exists only the present instant; a Now which always and
+						without end is itself new."
+					</p>
+					<p data-quoteAuthor>– Meister Eckhart</p>
+				</div>
+
+				<ul class="module routine-list" data-routinesList></ul>
+			</div>
+		</main>
+
+		<footer class="footer-menu hf-style">
+			<ul class="flex">
+				<button class="footer-menu-btn" data-footerMenuBtn="routines">
+					<i class="fas fa-clipboard"></i>
+					<p>routines</p>
+				</button>
+
+				<button class="footer-menu-btn" data-footerMenuBtn="explore">
+					<i class="fas fa-th-large"></i>
+					<p>explore</p>
+				</button>
+
+				<button class="footer-menu-btn" data-footerMenuBtn="history">
+					<i class="fas fa-history"></i>
+					<p>history</p>
+				</button>
+
+				<button class="footer-menu-btn" data-footerMenuBtn="measures">
+					<i class="fas fa-child"></i>
+					<p>measures</p>
+				</button>
+
+				<button class="footer-menu-btn" data-footerMenuBtn="more">
+					<i class="fas fa-ellipsis-h"></i>
+					<p>more</p>
+				</button>
+			</ul>
+		</footer>
+
+		<div class="module add-routine-modal-overlay" data-routineModalOpen="false">
+			<article class="module add-routine-modal" data-addRoutineModal>
+				<a href="./createWorkout.html" class="link-item routine-modal-link">
+					<i class="fas fa-clipboard link-icon"></i>
+					<div class="link-text">
+						<p class="link-title">create from scratch</p>
+						<p class="link-subtitle fs-text--smaller">
+							Create a new routine by adding and setting up each individually.
+						</p>
+					</div>
+				</a>
+
+				<a
+					href="./pages/createWorkout.html"
+					class="link-item routine-modal-link"
+				>
+					<i class="fas fa-atom link-icon"></i>
+					<div class="link-text">
+						<p class="link-title">trust us</p>
+						<p class="link-subtitle fs-text--small">
+							Smart Trainer will pick what it thinks is best for you and will
+							create a full body workout.
+						</p>
+					</div>
+					<div class="info-icon-container">
+						<i class="fas fa-info info-icon"></i>
+					</div>
+				</a>
+
+				<a href="./createWorkout.html" class="link-item routine-modal-link">
+					<i class="fas fa-child link-icon"></i>
+					<div class="link-text">
+						<p class="link-title">create for muscles</p>
+						<p class="link-subtitle fs-text--smaller">
+							Choose which muscles you want to target, setup your preferences
+							and Smart Trainer will create a full workout for you.
+						</p>
+					</div>
+					<div class="info-icon-container">
+						<i class="fas fa-info info-icon"></i>
+					</div>
+				</a>
+				<p class="routine-modal-footer">
+					As you progress, Smart Trainer learns more about you and suggests
+					changes to your routines.
+				</p>
+			</article>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,197 @@
+[
+	{
+		"name": "ab machine",
+		"id": "EX0001",
+		"category": "abdominal",
+		"images": {
+			"thumbnail": "./images",
+			"large": "./images"
+		},
+		"defaultSets": 3,
+		"defaultReps": 10,
+		"defaultWeight": 25,
+		"defaultRest": 120
+	},
+	{
+		"name": "ball crunch",
+		"id": "EX0002",
+		"category": "abdominal",
+		"images": {
+			"thumbnail": "./images",
+			"large": "./images"
+		},
+		"defaultSets": 3,
+		"defaultReps": 10,
+		"defaultWeight": 25,
+		"defaultRest": 120
+	},
+	{
+		"name": "bike crunch",
+		"id": "EX0003",
+		"category": "abdominal",
+		"images": {
+			"thumbnail": "./images",
+			"large": "./images"
+		},
+		"defaultSets": 3,
+		"defaultReps": 10,
+		"defaultWeight": 25,
+		"defaultRest": 120
+	},
+	{
+		"name": "cable crunch",
+		"id": "EX0004",
+		"category": "abdominal",
+		"images": {
+			"thumbnail": "./images",
+			"large": "./images"
+		},
+		"defaultSets": 3,
+		"defaultReps": 10,
+		"defaultWeight": 25,
+		"defaultRest": 120
+	},
+	{
+		"name": "cable twist",
+		"id": "EX0005",
+		"category": "abdominal",
+		"images": {
+			"thumbnail": "./images",
+			"large": "./images"
+		},
+		"defaultSets": 3,
+		"defaultReps": 10,
+		"defaultWeight": 25,
+		"defaultRest": 120
+	},
+	{
+		"name": "pull up",
+		"id": "EX0006",
+		"category": "back",
+		"images": {
+			"thumbnail": "./images",
+			"large": "./images"
+		},
+		"defaultSets": 3,
+		"defaultReps": 10,
+		"defaultWeight": 25,
+		"defaultRest": 120
+	},
+	{
+		"name": "bent over row",
+		"id": "EX0007",
+		"category": "back",
+		"images": {
+			"thumbnail": "./images",
+			"large": "./images"
+		},
+		"defaultSets": 3,
+		"defaultReps": 10,
+		"defaultWeight": 25,
+		"defaultRest": 120
+	},
+	{
+		"name": "lat pulldown",
+		"id": "EX0008",
+		"category": "back",
+		"images": {
+			"thumbnail": "./images",
+			"large": "./images"
+		},
+		"defaultSets": 3,
+		"defaultReps": 10,
+		"defaultWeight": 25,
+		"defaultRest": 120
+	},
+	{
+		"name": "machine chest-supported row",
+		"id": "EX0009",
+		"category": "back",
+		"images": {
+			"thumbnail": "./images",
+			"large": "./images"
+		},
+		"defaultSets": 3,
+		"defaultReps": 10,
+		"defaultWeight": 25,
+		"defaultRest": 120
+	},
+	{
+		"name": "lat pullovers",
+		"id": "EX0010",
+		"category": "back",
+		"images": {
+			"thumbnail": "./images",
+			"large": "./images"
+		},
+		"defaultSets": 3,
+		"defaultReps": 10,
+		"defaultWeight": 25,
+		"defaultRest": 120
+	},
+	{
+		"name": "push up",
+		"id": "EX0011",
+		"category": "chest",
+		"images": {
+			"thumbnail": "./images",
+			"large": "./images"
+		},
+		"defaultSets": 3,
+		"defaultReps": 10,
+		"defaultWeight": 25,
+		"defaultRest": 120
+	},
+	{
+		"name": "bench press",
+		"id": "EX0012",
+		"category": "chest",
+		"images": {
+			"thumbnail": "./images",
+			"large": "./images"
+		},
+		"defaultSets": 3,
+		"defaultReps": 10,
+		"defaultWeight": 25,
+		"defaultRest": 120
+	},
+	{
+		"name": "incline dumbbell press",
+		"id": "EX0013",
+		"category": "chest",
+		"images": {
+			"thumbnail": "./images",
+			"large": "./images"
+		},
+		"defaultSets": 3,
+		"defaultReps": 10,
+		"defaultWeight": 25,
+		"defaultRest": 120
+	},
+	{
+		"name": "weighted dips",
+		"id": "EX0014",
+		"category": "chest",
+		"images": {
+			"thumbnail": "./images",
+			"large": "./images"
+		},
+		"defaultSets": 3,
+		"defaultReps": 10,
+		"defaultWeight": 25,
+		"defaultRest": 120
+	},
+	{
+		"name": "cable presses",
+		"id": "EX0015",
+		"category": "chest",
+		"images": {
+			"thumbnail": "./images",
+			"large": "./images"
+		},
+		"defaultSets": 3,
+		"defaultReps": 10,
+		"defaultWeight": 25,
+		"defaultRest": 120
+	}
+]

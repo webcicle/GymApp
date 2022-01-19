@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./styles.css" />
+		<link rel="stylesheet" href="./fontawesome-free-5.9.0-web/css/all.css" />
+		<script src="./createWorkout.js" type="module"></script>
+		<title>Routines | GymHype</title>
+	</head>
+	<body class="body-relative">
+		<div class="alert" data-alertOpen='false'>
+			<i class="fas fa-exclamation-triangle"></i>
+			<p class="alert-message" data-alertMsg>This feature will be available in the future (or not)</p>
+		</div>
+
+		<header class="header" data-header>
+			<!-- <div class="blur"></div> -->
+			<p class="header-fixed-title" data-headerTitle>routines</p>
+			<div class="center flex">
+				<div
+					class="
+						header-button-container
+						space-between
+						header-button-container--create-wo-page
+					"
+				>
+					<button class="header-btn sort-btn" data-headerBtn="cancel">
+						cancel
+					</button>
+					<div class="right-btn-container">
+					<button class="header-btn "  data-headerBtn="add">add</button>
+					<button class="header-btn hide"  data-headerBtn="save">save</button>
+
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main class="main-window">
+			<div class="center">
+				<h1 class="section-title" data-sectionTitle>
+					routine <span>XX1</span>
+				</h1>
+				<form action="" class="routine-info-form" data-routineInfoForm>
+					<!-- <button class="header-btn save-btn" type="submit" data-headerBtn="save">save</button> -->
+
+					<p class="days-title fs-text--small bg-clr-grey">Days of the Week</p>
+					<div class="days-input flex space-between bg-clr-grey">
+						<label for="sunday" class="fs-text--medium"
+							>s
+							<input
+								type="checkbox"
+								class="checkbox-input"
+								name="daysOfWeek"
+								id="sunday"
+						/></label>
+						<label for="monday" class="fs-text--medium"
+							>m
+							<input
+								type="checkbox"
+								class="checkbox-input"
+								name="daysOfWeek"
+								id="monday"
+						/></label>
+						<label for="tuesday" class="fs-text--medium"
+							>t
+							<input
+								type="checkbox"
+								class="checkbox-input"
+								name="daysOfWeek"
+								id="tuesday"
+						/></label>
+						<label for="wednesday" class="fs-text--medium"
+							>w
+							<input
+								type="checkbox"
+								class="checkbox-input"
+								name="daysOfWeek"
+								id="wednesday"
+						/></label>
+						<label for="thursday" class="fs-text--medium"
+							>t
+							<input
+								type="checkbox"
+								class="checkbox-input"
+								name="daysOfWeek"
+								id="thursday"
+						/></label>
+						<label for="friday"
+							>f
+							<input
+								type="checkbox"
+								class="checkbox-input"
+								name="daysOfWeek"
+								id="friday"
+						/></label>
+						<label for="saturday"
+							>s
+							<input
+								type="checkbox"
+								class="checkbox-input"
+								name="daysOfWeek"
+								id="saturday"
+						/></label>
+					</div>
+
+					<div class="form-info-inputs">
+						<div class="form-input-row">
+							<label for="name">name</label
+							><input
+								type="text"
+								name="name"
+								id="name"
+								placeholder="(optional)"
+							/>
+						</div>
+
+						<div class="form-input-row">
+							<label for="goal">goal</label
+							><input
+								type="text"
+								name="goal"
+								id="goal"
+								placeholder="Type your goal"
+							/>
+						</div>
+
+						<div class="form-input-row">
+							<label for="stretches">stretches</label
+							><input
+								type="text"
+								name="stretches"
+								id="stretches"
+								placeholder="(optional)"
+							/>
+						</div>
+
+						<div class="form-input-row">
+							<label for="renewal">renewal</label
+							><input
+								type="date"
+								name="renewal"
+								id="renewal"
+								placeholder="(optional)"
+							/>
+						</div>
+
+						<div class="form-input-row">
+							<label for="notes">notes</label
+							><textarea
+								name="notes"
+								id="notes"
+								placeholder="(optional)"
+								cols="30"
+								rows="5"
+							></textarea>
+						</div>
+					</div>
+
+					<h2 class="exercise-list-title fs-text--medium center">exercises</h2>
+					<div class="module exercise-list bg-clr-grey">
+						<button class="add-exercise-btn btn" data-addExerciseBtn>
+							<i class="fas fa-plus plus-icon"></i>
+							Add exercise
+						</button>
+					<ul data-exerciseListRoutines>
+						
+					</ul>
+					</div>
+				</form>
+			</div>
+		</main>
+
+		<div
+			class="module bg-clr-grey add-exercise-modal"
+			data-exerciseModalOpen="false"
+		>
+			<header class="modal-header center">
+				<h1 class="section-title">exercises</h1>
+			<div class="modal-instructions modal-instructions--exercise-modal fs-text--small">
+				<p>
+					Tick the boxes next to the exercises you want to include in your
+					routine and press 'Add' to add them to your routine.
+				</p>
+			</header>
+				<form class="exercise-modal-form" method="post" data-exerciseModalForm>
+					<input type="text" class="center exercise-search" data-exerciseSearch placeholder="Type to search for an exercise">
+
+						<ul data-exerciseList class="exercise-modal-list">
+							<li class="link-item exercise-list-item">
+									<i class="fas fa-dumbbell exercise-list-item-icon"></i>
+								<div class="routine-item-info exercise-list-item-info">
+									<h2 class="routine-item-title exercise-list-item-title">ab machine</h2>
+									<p class="routine-item-goal exercise-list-item-category">abdominal</p>
+								</div>
+								<input type="checkbox" class="exercise-list-item-checkbox css-checkbox dark-check-green" name="checkbox" id="">
+							</li>
+					</ul>
+
+				</form>
+			</div>
+
+
+		<footer class="footer-menu hf-style">
+			<ul class="flex">
+				<button class="footer-menu-btn" data-footerMenuBtn="routines">
+					<i class="fas fa-clipboard"></i>
+					<p>routines</p>
+				</button>
+
+				<button class="footer-menu-btn" data-footerMenuBtn="explore">
+					<i class="fas fa-th-large"></i>
+					<p>explore</p>
+				</button>
+
+				<button class="footer-menu-btn" data-footerMenuBtn="history">
+					<i class="fas fa-history"></i>
+					<p>history</p>
+				</button>
+
+				<button class="footer-menu-btn" data-footerMenuBtn="measures">
+					<i class="fas fa-child"></i>
+					<p>measures</p>
+				</button>
+
+				<button class="footer-menu-btn" data-footerMenuBtn="more">
+					<i class="fas fa-ellipsis-h"></i>
+					<p>more</p>
+				</button>
+			</ul>
+		</footer>
+	</body>
+</html>
