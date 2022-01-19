@@ -32,7 +32,7 @@ function setupFooter() {
 		button.addEventListener('click', (e) => {
 			const target = e.target.parentElement.dataset.footermenubtn;
 			console.log(target);
-			if (target === 'routines') window.location = './routines.html';
+			if (target === 'routines') window.location = './index.html';
 			else
 				alert('This function will be available at a later time', 'green', 2000);
 		});
@@ -64,7 +64,7 @@ function exerciseModalButtons(e) {
 		target.dataset.headerbtn === 'cancel' &&
 		exerciseModal.dataset.exercisemodalopen === 'false'
 	) {
-		window.location = './routines.html';
+		window.location = './index.html';
 	} else if (
 		target.dataset.headerbtn === 'cancel' &&
 		exerciseModal.dataset.exercisemodalopen === 'true'

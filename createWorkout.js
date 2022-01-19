@@ -129,5 +129,5 @@ async function submitForm(e) {
 	console.log(routineObject);
 	setStorageItem('routines', routinesStorage);
 	// routineInfoForm.removeEventListener('submit', async (e) => submitForm);
-	window.location = './routines.html';
+	window.location = './index.html';
 }
